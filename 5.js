@@ -1,9 +1,18 @@
-let frutas = ["Maçã", "Laranja", "Melancia"];
-let i;
+const prompt = require('prompt-sync')()
 
-if(frutas.includes("Laranja")){
-    console.log("Encontrado!");
+let produtos = []
+
+console.log("Cadastre 5 produtos:")
+
+for(let i = 0; i < 5; i++) {
+    let produto = prompt(`Digite o ${i + 1}º produto: `)
+    produtos.push(produto)
 }
-else{
-    console.log("Não encontrado!");
+console.log("\nLista de produtos: ")
+for(let i = 0; i < produtos.length; i++) {
+    console.log(produtos[i])
 }
+produtos.pop()
+
+console.log("\nLista após apagar o último produto:")
+console.log(produtos)
