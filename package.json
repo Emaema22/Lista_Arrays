@@ -19,5 +19,6 @@
   "homepage": "https://github.com/Emaema22/Lista_Arrays#readme",
   "dependencies": {
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "devDependencies": {}
 }
